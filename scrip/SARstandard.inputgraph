@@ -1,0 +1,149 @@
+section InputGraph
+	section Tool0
+		toolClass ScriptExecutorTool
+		bindings ((Mouse, p))
+		executablePathName /home/sandbox/scrip/capture-screen.sh
+		arguments ()
+	endsection
+	
+	section Tool1
+		toolClass DEMTool
+		bindings ((Mouse, 4))
+	endsection
+	
+	section Tool2
+		toolClass ScriptExecutorTool
+		bindings ((Mouse, 9))
+		executablePathName /home/sandbox/scrip/weather2.sh
+		arguments ()
+	endsection
+	
+	section Tool3
+		toolClass LocalWaterTool
+		bindings ((Mouse, 5, 6))
+	endsection
+	
+	section Tool4
+		toolClass GlobalWaterTool
+		bindings ((USBEncoder, Button0, Button1))
+	endsection
+	
+	section Tool5
+		toolClass GlobalWaterTool
+		bindings ((Mouse, 1, 2))
+	endsection
+	
+	section Tool6
+		toolClass RayMenuTool
+		bindings ((Mouse, Mouse3))
+		drawRay true
+		rayColor (1, 0, 0)
+		rayWidth 3
+	endsection
+	
+	section Tool7
+		toolClass FPSNavigationTool
+		bindings ((Mouse, q, a, d, s, w, Space))
+		activationToggle true
+		rotateFactors (5, 5)
+		moveSpeeds (200, 200)
+		fallAcceleration 386.220472440944889
+		jumpVelocity 157.480314960629926
+		probeSize 12
+		maxClimb 12
+		azimuthStep 0
+		fixAzimuth false
+		levelOnExit false
+		drawHud true
+		drawElevation false
+		hudColor (0, 1, 0)
+		hudDist 24
+		hudRadius 5
+		hudFontSize 0.112500004
+	endsection
+	
+	section Tool8
+		toolClass ScrollTool
+		bindings ((Mouse, MouseWheel))
+		drawRay true
+		rayColor (1, 0, 0)
+		rayWidth 3
+	endsection
+	
+	section Tool9
+		toolClass WidgetTool
+		bindings ((Mouse, Mouse1))
+		drawRay true
+		rayColor (1, 0, 0)
+		rayWidth 3
+	endsection
+	
+	section Tool10
+		toolClass DEMTool
+		bindings ((Mouse, 3))
+	endsection
+	
+	section Tool11
+		toolClass WiggleScreenshotTool
+		bindings ((Mouse, 0))
+		screenshotFileName /home/sandbox/Pictures/Screen.png
+		windowIndex 0
+		numFrames 10
+		angleIncrement 2.5
+	endsection
+	
+	section Tool12
+		toolClass ScriptExecutorTool
+		bindings ((Mouse, 7))
+		executablePathName /home/sandbox/scrip/heights-down.sh
+		arguments ()
+	endsection
+	
+	section Tool13
+		toolClass ScriptExecutorTool
+		bindings ((Mouse, 8))
+		executablePathName /home/sandbox/scrip/heights-up.sh
+		arguments ()
+	endsection
+	
+	section Tool14
+		toolClass ScriptExecutorTool
+		bindings ((USBEncoder, Button2))
+		executablePathName /home/sandbox/scrip/weather.sh
+		arguments ()
+	endsection
+	
+	section Tool15
+		toolClass WiggleScreenshotTool
+		bindings ((USBEncoder, Button11))
+		screenshotFileName /home/sandbox/Pictures/Screen.png
+		windowIndex 0
+		numFrames 10
+		angleIncrement 2.5
+	endsection
+	
+	section Tool16
+		toolClass ScriptExecutorTool
+		bindings ((Mouse, x))
+		executablePathName /home/sandbox/scrip/weatherHOLD.sh
+		arguments ()
+	endsection
+	
+	section Tool17
+		toolClass MouseNavigationTool
+		bindings ((Tool9, Button0), (Mouse, z, LeftShift), (Tool8, Valuator0))
+		rotatePlaneOffset 2.5
+		rotateFactor 2.5
+		invertDolly false
+		dollyCenter true
+		scaleCenter true
+		dollyingDirection (-0, -0, -1)
+		scalingDirection (-0, -0, -1)
+		dollyFactor 1
+		scaleFactor 2.5
+		wheelDollyFactor -10
+		wheelScaleFactor 0.5
+		spinThreshold 0.075000002980232211
+		showScreenCenter true
+	endsection
+endsection

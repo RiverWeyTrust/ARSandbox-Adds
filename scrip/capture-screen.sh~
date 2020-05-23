@@ -1,0 +1,8 @@
+# capture-screen.sh
+#!/bin/bash
+
+cd ~/src/ScreenShots
+scrot 'SARndbox_%Y-%m-%d_%H-%M-%s.png' -u -s -e'mv $f /media/sandbox18/capture/'
+#scrot 'SARndbox_%Y-%m-%d_%H-%M-%s.png' -u -e'mv $f /media/sandbox18/capture/'
+scrot 'SARndbox_%Y-%m-%d_%H-%M-%s.png' -u 
+cd ~/src/SARndbox-2.5

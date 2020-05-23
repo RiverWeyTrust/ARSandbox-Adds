@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon=/home/sandbox/scrip/image/SARndbox_TRI.png
+Icon[en_GB]=mate-panel-launcher
+Exec=/home/sandbox/src/SARndbox-2.7/RunSARndboxTRI.sh
+Name[en_GB]=SARndbox Triangulated Water
+Name=SARndbox Triangulated Water
