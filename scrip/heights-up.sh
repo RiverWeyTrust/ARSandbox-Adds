@@ -7,6 +7,18 @@
  
 # use case statement to set the assignment to the next cycle value
     case $currdep in
+     "-116") echo "Reset Depth to -114";
+             echo "heightMapPlane 0.0 0.0 1.0 -114.0" > SARndbox.fifo 
+             echo "-114" > /home/sandbox/scrip/height_set.temp
+            ;;
+     "-114") echo "Reset Depth to -112";
+             echo "heightMapPlane 0.0 0.0 1.0 -112.0" > SARndbox.fifo 
+             echo "-112" > /home/sandbox/scrip/height_set.temp
+            ;;
+     "-112") echo "Reset Depth to -110";
+             echo "heightMapPlane 0.0 0.0 1.0 -110.0" > SARndbox.fifo 
+             echo "-110" > /home/sandbox/scrip/height_set.temp
+            ;;
      "-110") echo "Reset Depth to -108";
              echo "heightMapPlane 0.0 0.0 1.0 -108.0" > SARndbox.fifo 
              echo "-108" > /home/sandbox/scrip/height_set.temp
@@ -31,7 +43,23 @@
              echo "heightMapPlane 0.0 0.0 1.0 -96.0" > SARndbox.fifo 
              echo "-96" > /home/sandbox/scrip/height_set.temp
             ;;
-     "-96")  echo "Not Going Any Higher!";
+     "-96") echo "Reset Depth to -94";
+             echo "heightMapPlane 0.0 0.0 1.0 -94.0" > SARndbox.fifo 
+             echo "-94" > /home/sandbox/scrip/height_set.temp
+            ;;
+     "-94") echo "Reset Depth to -92";
+             echo "heightMapPlane 0.0 0.0 1.0 -92.0" > SARndbox.fifo 
+             echo "-92" > /home/sandbox/scrip/height_set.temp
+            ;;
+     "-92") echo "Reset Depth to -90";
+             echo "heightMapPlane 0.0 0.0 1.0 -90.0" > SARndbox.fifo 
+             echo "-90" > /home/sandbox/scrip/height_set.temp
+            ;;
+     "-90") echo "Reset Depth to -88";
+             echo "heightMapPlane 0.0 0.0 1.0 -88.0" > SARndbox.fifo 
+             echo "-88" > /home/sandbox/scrip/height_set.temp
+            ;;
+     "-88")  echo "Not Going Any Higher!";
             ;;
      "*" )   echo "Reset to normal Base Plane";
              echo "heightMapPlane 0.0 0.0 1.0 -102.0" > SARndbox.fifo 

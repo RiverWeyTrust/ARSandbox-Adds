@@ -16,19 +16,19 @@
             sh /home/sandbox/scrip/switch-to-snow.sh ;
             echo "snow" > /home/sandbox/scrip/weather_file.tmp
             ;;
-     "snow") echo "Changed snow to pol";
+     "snow") echo "Changed snow to pollution";
             sh /home/sandbox/scrip/switch-to-pol.sh ;
             echo "pol" > /home/sandbox/scrip/weather_file.tmp
             ;;
-     "pol") echo "Changed polution to ice";
+     "pol") echo "Changed pollution to ice";
             sh /home/sandbox/scrip/switch-to-ice.sh ;
             echo "ice" > /home/sandbox/scrip/weather_file.tmp
             ;;
-     "ice") echo "Changed ice to toxic";
+     "ice") echo "Changed ice to toxic waste";
             sh /home/sandbox/scrip/switch-to-toxic.sh ;
             echo "toxic" > /home/sandbox/scrip/weather_file.tmp
             ;;
-     "toxic") echo "Changed toxic to nasty";
+     "toxic") echo "Changed toxic to nasty muck";
             sh /home/sandbox/scrip/switch-to-nasty.sh ;
             echo "nasty" > /home/sandbox/scrip/weather_file.tmp
             ;;

@@ -84,12 +84,10 @@ section InputGraph
 	endsection
 	
 	section Tool11
-		toolClass WiggleScreenshotTool
+		toolClass ScriptExecutorTool
 		bindings ((Mouse, 0))
-		screenshotFileName /home/sandbox/Pictures/Screen.png
-		windowIndex 0
-		numFrames 10
-		angleIncrement 2.5
+		executablePathName /home/sandbox/scrip/capture-screen.sh
+		arguments ()
 	endsection
 	
 	section Tool12
@@ -114,12 +112,10 @@ section InputGraph
 	endsection
 	
 	section Tool15
-		toolClass WiggleScreenshotTool
+		toolClass ScriptExecutorTool
 		bindings ((USBEncoder, Button11))
-		screenshotFileName /home/sandbox/Pictures/Screen.png
-		windowIndex 0
-		numFrames 10
-		angleIncrement 2.5
+		executablePathName /home/sandbox/scrip/capture-screen.sh
+		arguments ()
 	endsection
 	
 	section Tool16
@@ -128,8 +124,17 @@ section InputGraph
 		executablePathName /home/sandbox/scrip/weatherHOLD.sh
 		arguments ()
 	endsection
+
 	
 	section Tool17
+		toolClass ScriptExecutorTool
+		bindings ((Mouse, r))
+		executablePathName /home/sandbox/scrip/default_sealevel_setting.sh
+		arguments ()
+	endsection
+	
+	
+	section Tool18
 		toolClass MouseNavigationTool
 		bindings ((Tool9, Button0), (Mouse, z, LeftShift), (Tool8, Valuator0))
 		rotatePlaneOffset 2.5
